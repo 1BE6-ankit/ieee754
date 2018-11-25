@@ -13,7 +13,7 @@ public class Mantissa extends Application{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Logic log = new Logic(273);
+		Logic log = new Logic(273.15);
 		log.generate();
 		
 	}
