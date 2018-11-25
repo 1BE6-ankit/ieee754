@@ -27,7 +27,7 @@ class DecimalConverter{
 	}
 	
 	int recursiveGenerator(int n, int i) {
-		System.out.print("LOGIC");
+
 		int quotient, remainder;
 		ArrayList<Integer> tempRemainder;
 		
