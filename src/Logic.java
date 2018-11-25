@@ -7,7 +7,6 @@ public class Logic {
 	FractionalConverter frac;
 	
 	public Logic(double num) {
-		System.out.println(num);
 		this.num = num;
 		steps = new Vector<String>();
 		decimal = new DecimalConverter( (int) Math.floor(num));
@@ -15,7 +14,8 @@ public class Logic {
 	}
 	
 	void generate() {
-		System.out.println("Inside Logic");
+		frac.generate();
+		frac.testPrint();
 		//decimal.generate();
 		//decimal.testPrint();
 	}
