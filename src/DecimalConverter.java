@@ -10,7 +10,6 @@ class DecimalConverter{
 	int num;
 	int steps;
 	
-	// 
 	HashMap<Integer, Integer> divident;
 	HashMap<Integer, Integer> quotient;
 	HashMap<Integer, ArrayList<Integer>> remainderSet;
