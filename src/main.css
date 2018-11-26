@@ -1,0 +1,9 @@
+.hbox{
+	-fx-background-color: #355c7d;
+	-fx-padding: 10px;
+}
+
+.vbox{
+	-fx-background-color: #6c5b7b;
+	-fx-color:white;
+}

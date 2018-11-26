@@ -33,6 +33,8 @@ public class Mantissa extends Application{
 		 * For the Input Container
 		 *======================================================= */
 		HBox inputContianer = new HBox();
+		// add css
+		inputContianer.getStyleClass().add("hbox");
 		
 		// input field
 		TextField userInput = new TextField();
@@ -45,16 +47,13 @@ public class Mantissa extends Application{
 		// nodes in the top container
 		inputContianer.getChildren().addAll(userInput, confirmButton);
 		
-		Scene scene = new Scene(root, 600, 300);
-		
-		primaryStage.setScene(scene);
-		primaryStage.show();
 		
 		/*=======================================================
-		 * For left container, history
+		 * For left container (history)
 		 *======================================================= */
 		
 		VBox historyContainer = new VBox();
+		historyContainer.getStyleClass().add("vbox");
 		
 		//label for history box
 		Label historyLabel = new Label("History");
@@ -62,11 +61,23 @@ public class Mantissa extends Application{
 		// add historyelements to history contianer
 		historyContainer.getChildren().addAll(historyLabel);
 		
+		/*=======================================================
+		 * For Center container (main Content)
+		 *======================================================= */
+		
+		
 		/*
 		 *  Add layouts to root
 		 * */
 		root.setTop(inputContianer);
 		root.setLeft(historyContainer);
+		
+		Scene scene = new Scene(root, 600, 300);
+		// add css
+		scene.getStylesheets().add("main.css");
+		
+		primaryStage.setScene(scene);
+		primaryStage.show();
 		
 	}
 	
