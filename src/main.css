@@ -7,3 +7,7 @@
 	-fx-background-color: #6c5b7b;
 	-fx-color:white;
 }
+
+.vbox-middle{
+	-fx-background-color: #0091cf;
+}
