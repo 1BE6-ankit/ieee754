@@ -1,11 +1,15 @@
-import java.awt.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
 class DecimalConverter{
+	
+	/* Number  |  Quotient   | Remainder  |  Bit set
+	 * ---------------------------------------------
+	 *  90     |     45      |    0       |   {0}
+	 *  45     |     22      |    1       |   {1, 0} 
+	 *  ....
+	 * */
 	
 	int num;
 	int steps;
@@ -56,5 +60,23 @@ class DecimalConverter{
 			System.out.println(remainderSet.get(i));
 		}
 	}
+	
+	HashMap<Integer, Integer> getColumn1() {
+		return divident;
+	}
+	
+	HashMap<Integer, Integer> getColumn2() {
+		return quotient;
+	}
+	
+	HashMap<Integer, ArrayList<Integer>> getColumn4() {
+		// column 3 is obtained using column4
+		return remainderSet;
+	}
+	
+	int getTableSize() {
+		return steps;
+	}
+	
 	
 }

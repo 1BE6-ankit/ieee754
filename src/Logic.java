@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Vector;
 
 public class Logic {
@@ -14,16 +16,30 @@ public class Logic {
 	}
 	
 	void generate() {
-		frac.generate();
-		frac.testPrint();
-		//decimal.generate();
+//		frac.generate();
+//		frac.testPrint();
+		decimal.generate();
 		//decimal.testPrint();
 	}
 	
 	/*
-	 *  Convert the decimal part to binary
+	 * get all the fields required for decimalConverter
 	 * */
-	void decimalPart() {
-		
+	
+	HashMap<Integer, Integer> dgetColumn1() {
+		return decimal.getColumn1();
+	}
+	
+	HashMap<Integer, Integer> dgetColumn2() {
+		return decimal.getColumn2();
+	}
+	
+	HashMap<Integer, ArrayList<Integer>> dgetColumn4() {
+		// column 3 is obtained using column4
+		return decimal.getColumn4();
+	}
+	
+	int dgetTableSize() {
+		return decimal.getTableSize();
 	}
 }
